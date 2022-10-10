@@ -19,11 +19,18 @@ function getUser() {
   );
 
   let newRow = document.createElement("tr");
-  newRow.innerHTML = `<th scope="row">1</th>
+  newRow.innerHTML = `<th scope="row">→</th>
                 <td>${newUser.nome}</td>
                 <td>${newUser.surname}</td>
                 <td>${newUser.birthday}</td>`;
   table.appendChild(newRow);
+  document.querySelector("#name-field").value = "";
+  document.querySelector("#surname-field").value = "";
+  document.querySelector("#date-field").value = "";
 
   console.log(newUser);
 }
+
+document.querySelector("button").addEventListener("click", function (event) {
+  event.preventDefault();
+});
