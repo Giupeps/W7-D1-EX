@@ -1,7 +1,9 @@
+let table = document.querySelector("table");
+
 //Prendere i dati dall'input
 class Users {
-  constructor(name, surname, birthday) {
-    this.name = name;
+  constructor(nome, surname, birthday) {
+    this.nome = nome;
     this.surname = surname;
     this.birthday = birthday;
   }
@@ -15,6 +17,13 @@ function getUser() {
     document.querySelector("#surname-field").value,
     document.querySelector("#date-field").value
   );
+
+  let newRow = document.createElement("tr");
+  newRow.innerHTML = `<th scope="row">1</th>
+                <td>${newUser.nome}</td>
+                <td>${newUser.surname}</td>
+                <td>${newUser.birthday}</td>`;
+  table.appendChild(newRow);
 
   console.log(newUser);
 }
