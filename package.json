@@ -1,0 +1,22 @@
+{
+  "name": "w7-d1-ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --no-source-map assets/scss/style.scss assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giupeps/W7-D1-EX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Giupeps/W7-D1-EX/issues"
+  },
+  "homepage": "https://github.com/Giupeps/W7-D1-EX#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
